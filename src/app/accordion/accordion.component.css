@@ -1,0 +1,21 @@
+
+
+.trans {
+    transition: 0.7s;
+}
+
+li:hover {
+    background-color: rgb(78, 188, 231);
+    color: white
+    
+}
+
+.inner-accordion{
+    display: none;
+    background-color: white;
+    padding:10px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 5px;
+
+}

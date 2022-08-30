@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item list-group-item-info trans"
+        *ngFor="let accdata of accordion; let i = index"
+        >
+        <div (click)="onCollapseAccordion(accordionOpened)" style="cursor: pointer">{{ accdata.title }}</div>
+        <div #accordionOpened class="list-group-item-info inner-accordion">{{ accdata.description }}</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- <div class="row">
+    <div class="col-xs-12">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let accdata of accordion; let i = index" >
+                {{ accordion[i].title }} <a href="#" (click)="onAddAccordion(i)" style="cursor:pointer;">Click</a>
+                <p *ngIf="descriptionIn"> {{ accdata.description}} </p>
+            </li>
+        </ul>
+        
+    </div>
+</div> -->
